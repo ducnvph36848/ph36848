@@ -1,0 +1,282 @@
+* {
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    padding: 20px;
+}
+.container{
+   
+    display: grid;
+    grid-template-areas:
+    "header header header header header header  "
+    "menu menu menu menu menu menu "
+    " content_right content_right  content_right mani_content mani_content mani_content "
+    "footer footer footer footer footer footer"
+    ;
+    gap: 10px;
+    text-align: center;
+    font-size: 2vw;
+    
+   
+
+}
+.item_1{
+    grid-area: header;
+    background: #ffa900;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: normal; 
+}
+
+.item_2{
+    grid-area: menu ;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+   
+}
+.timkiem{
+height: 46px;
+width: 90%;
+color: #000;
+font-size: 25px;
+transform: translateY(40px);
+
+}
+.button{   
+    background-color: #ffa900;
+    font-size: 15px;
+    border-radius:10px ;
+    height: 46px;
+   width: 100%;
+   color: #000;
+  line-height: 44px;
+  transform: translateY(40px);
+}
+.incon img {
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+    margin-left: 50px;
+    float: left;
+
+}
+
+menu{
+    position: relative;
+
+}
+
+.pagination{
+   
+    display: flex;
+  
+    padding: 0;
+    margin: 0;
+
+}
+li{
+    background: #afbe19;
+    flex: 1;
+    margin: 5px 5px;
+    border-radius: 5px;
+}
+li a{
+    height: 100%;
+    width: 200px;
+    color: #000;
+    font-size: 100%;
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.anh{
+width: 100%;
+height: 100%;
+}
+footer {
+background-color:#be7a19;
+color: white;
+text-align: center;
+padding: 10px;
+}
+
+
+.Mau{
+    background: #be7a19;
+    
+}
+
+.pagination{
+    background-color: #be7a19;
+    
+    list-style: none;
+  
+}
+
+.side{
+    flex-basis: 50%;
+    background-color: #f1f1f1;
+    padding: px;
+}
+.fakeimg{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #BCE2C9;
+    width: 100%;
+    padding:px;
+}
+/* Cot chinh */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    background-color: white;
+   
+}
+.newimg{
+    background-color: #BCE2C9;
+    width: 100%;
+   
+}
+/* Footer */
+.footer{
+    padding: 10px;
+    text-align: center;
+    background: white;
+    
+}
+
+
+.item_1{
+    grid-area: header;
+    background: var(--primary);
+    height: 100%;
+}
+.item_2{
+    grid-area: menu ;
+    color: #eeeeee;
+    background: #be7a19;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.item_3{
+    grid-area: content_right;
+    background: var(--primary);
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+}
+.item_4{
+    grid-area: mani_content ;
+    height: 100%;
+    width: 100%;
+}
+
+.item_6{
+    grid-area: footer ;
+    background-color: #be7a19;
+    height: 60px;
+    width: 100%;
+   
+}
+
+.item_7{
+    grid-area: content_left ;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+.item_8{
+    grid-area: content_left ;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+.item_9{
+    grid-area: content_left ;
+    background: var(--primary);
+    background-color: #ffa900;
+    height: 100%;
+    width: 100%;
+    padding: 18px;
+    
+}
+.item_10{
+    grid-area: content_left ;
+    background: var(--primary);
+    background-color: #ffa900;
+    height: 100%;
+    width: 100%;
+    padding: 18px;
+}
+.item_11{
+    grid-area: content_left ;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+
+}
+.item_11 img{
+    width: 80%;
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+    margin-right: 20px;
+    
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width :800px) {
+     .item_2{
+        flex-direction: column;
+
+
+     }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        grid-template-areas:
+    "header header header header header header  "
+    "menu menu menu menu menu menu "
+    " content_right content_right content_right content_right content_right content_right "
+    "mani_content mani_content mani_content mani_content mani_content mani_content "
+    "footer footer footer footer footer footer"
+    ;
+     }
+
+}
+
+@media screen and (max-width:767px){
+    .img1{
+        width: 100%;
+        height: 100%;
+    }
+   
+}
+@media screen and (min-width:767px) and (max-width:1023){
+.product{
+    width: 250px;
+}
+
+}
+@media screen and (min-width:1024px){
+.product{
+    width: 300px;
+}
+
+}
+
